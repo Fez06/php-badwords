@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-
+    var_dump($_post);
     //echo $_POST['testo'];
     //echo $_POST['parola'];
      
@@ -20,6 +20,6 @@
     <br>
     <br>
     <p><?php echo str_replace($_POST['parola'], '***', $_POST['testo']) ?></p>
-    <p><?php echo strlen(str_replace($_POST['parola'], 'xxx', $_POST['testo'])) ?></p>
+    <p><?php echo strlen(str_replace($_POST['parola'], '***', $_POST['testo'])) ?></p>
 </body>
 </html>
